@@ -15,8 +15,7 @@ def unit_step_response(M, t):
 def steady_state_error(M, R):
     s = symbols('s')
     num, den = numer(M), denom(M)
-    K = limit(num / den, s, 0)
-    return (1 - K) / R
+    return R / (den.subs(s, 0))
 
 def transient_response(step_response, t, steady_state_error):
     return step_response - steady_state_error
