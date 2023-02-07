@@ -1,2 +1,2 @@
 # 1st-order-controller-systems-cal
-cal1.py - closed loop transfer function & unit step response cal
+to find closed loop t/f, unit response, steady state error, transcient response
