@@ -3,7 +3,7 @@ import pandas as pd
 def pad_with_zeros(array, length):
     return array + [0] * (length - len(array))
 
-print("\n\n--------------- Routh's table ---------------\n\n")
+print("\n\n Routh's table \n\n")
 
 order = int(input("Enter the order of the system: "))
 
